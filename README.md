@@ -1,3 +1,3 @@
-# backlog-js.github.io
+# backlog.js.org
 
 Backlog JS Website
