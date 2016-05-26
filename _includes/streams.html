@@ -1,6 +1,11 @@
+{% assign streams = site.data.streams | sort: 'date' %}
+
 <center><h1>Streams</h1></center>
 
-{% for stream in site.data.streams %}
-<h3>{{ stream.title }} ({{ stream.topic }})</h3>
+{% for stream in streams %}
+<h3>{{ stream.title }}</h3>
+<p>
+  {{ stream.date }}
+</p>
 <iframe width="560" height="315" src="{{ stream.url }}" frameborder="0" allowfullscreen></iframe>
 {% endfor %}
