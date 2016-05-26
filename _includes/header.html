@@ -2,8 +2,13 @@
 
 <h1>BacklogJS</h1>
 
-<p>
-Date: {{ header.date }}
-Topic: {{ header.topic }}
-Stream: {{ header.url }}
-</p>
+<section>
+  <h2>Next session</h2>
+  <p>
+    Date: {{ header.date }}
+    Topic: {{ header.topic }}
+    {% unless header.url == '' %}
+      Stream: {{ header.url }}
+    {% endunless %}
+  </p>
+</section>
