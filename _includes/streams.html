@@ -1,11 +1,15 @@
 {% assign streams = site.data.streams | sort: 'date' %}
-
-<center><h1>Streams</h1></center>
-
-{% for stream in streams %}
-<h3>{{ stream.topic }}</h3>
-<p>
-  {{ stream.date }}
-</p>
-<iframe width="560" height="315" src="{{ stream.url }}" frameborder="0" allowfullscreen></iframe>
-{% endfor %}
+<main class="page-main">
+  <h2 class="streams-title">Streams</h2>
+<section class="feed row">
+  {% for stream in streams %}
+  <article class="stream small-12 medium-12 large-6 columns">
+    <h4 class="streams-topic">
+      {{ stream.topic }}
+    </h4>
+    <time class="streams-date" datetime="{{ stream.datetime }}">{{ stream.date }}</time>
+    <iframe width="100%" height="315px" src="{{ stream.url }}" frameborder="0" allowfullscreen></iframe>
+  </article>
+  {% endfor %}
+</section>
+</main>

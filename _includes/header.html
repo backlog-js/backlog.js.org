@@ -1,14 +1,12 @@
 {% assign header = site.data.header %}
+<header>
+<div class="logo">
+  <img src="{{ header.logo }}" alt="" width="100px" height="100px">
+</div>
+<h1 class="page-title">BacklogJS</h1>
+<p><em>Hangouts crew</em></p>
 
-<h1>BacklogJS</h1>
-
-<section>
-  <h2>Next session</h2>
-  <p>
-    Date: {{ header.date }}
-    Topic: {{ header.topic }}
-    {% unless header.url == '' %}
-      Stream: {{ header.url }}
-    {% endunless %}
-  </p>
+<section class="announcements">
+  <h2>Next meeting on {{ header.date }}</h2>
 </section>
+</header>
