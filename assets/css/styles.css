@@ -1,0 +1,117 @@
+body {
+  background-color: cornsilk;
+}
+header {
+  text-align: center;
+  padding-top: 2em;
+}
+header p {
+  margin-bottom: 0.2em;
+}
+.announcements {
+  margin-top: 3em;
+}
+.announcements .ann-date,
+.announcements .ann-topic {
+  color: #fe9344;
+}
+.page-main {
+  margin-top: 5em;
+}
+.stream {
+  margin-bottom: 2em;
+}
+.streams-title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.feed .streams-date {
+  margin: 0;
+  font-style: italic;
+}
+.page-footer {
+  margin-top: 5em;
+  text-align: center;
+}
+@media (max-width: 64em) {
+  iframe {
+    height: 500px;
+  }
+  header p {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 40em) {
+  header .page-title {
+    font-size: 3.5em;
+  }
+  .announcements .ann-date {
+    font-size: 2em;
+  }
+  .page-main .streams-title {
+    font-size: 2.5em;
+    margin-bottom: 3em;
+  }
+  .stream {
+    text-align: center;
+  }
+  .streams-topic {
+    font-size: 2em;
+  }
+  iframe {
+    height: 315px;
+  }
+}
+.announcements {
+  margin-top: 3em;
+}
+.announcements .ann-date {
+  color: #fe9344;
+}
+.page-main {
+  margin-top: 5em;
+}
+.stream {
+  margin-bottom: 2em;
+}
+.streams-title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.feed .streams-date {
+  margin: 0;
+  font-style: italic;
+}
+.page-footer {
+  margin-top: 5em;
+  text-align: center;
+}
+@media (max-width: 64em) {
+  iframe {
+    height: 500px;
+  }
+  header p {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 40em) {
+  header .page-title {
+    font-size: 3.5em;
+  }
+  .announcements .ann-date {
+    font-size: 2em;
+  }
+  .page-main .streams-title {
+    font-size: 2.5em;
+    margin-bottom: 3em;
+  }
+  .stream {
+    text-align: center;
+  }
+  .streams-topic {
+    font-size: 2em;
+  }
+  iframe {
+    height: 315px;
+  }
+}
